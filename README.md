@@ -18,3 +18,7 @@ v. 1.0.0
 
 _Donate:_
 * TRX/BTT: TEyaTpdKMCiKyQsokb89oBoLEiyzU1KHRE
+
+_Протестированные VPS для торрентов_:
+* [cp.zomro.com](https://zomro.com/?from=296803)
+* [vultr.com](https://www.vultr.com/?ref=8883507)
