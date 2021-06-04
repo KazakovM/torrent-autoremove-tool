@@ -3,9 +3,14 @@ from time import sleep
 import config
 import datetime
 import json
+import shutil
 
-global PORT, LOGIN, PASSWORD, MAXTORRENTS
+global PORT, LOGIN, PASSWORD, MAXTORRENTS, FREE_SPACE
 
+
+def culc_free_space():
+    total, used, free = shutil.disk_usage("/")
+    return round(free / 2**30, 2)
 
 def log(level, message):
     with open('log.txt', 'a', encoding="UTF-8") as file:
@@ -16,11 +21,12 @@ def log(level, message):
 def loadConfig():
     with open('..\\config.json', 'r', encoding="UTF-8") as file:
         js = json.load(file)
-        global PORT, LOGIN, PASSWORD, MAXTORRENTS
+        global PORT, LOGIN, PASSWORD, MAXTORRENTS, FREE_SPACE
         PORT = js["PORT"]
         LOGIN = js["LOGIN"]
         PASSWORD = js["PASSWORD"]
         MAXTORRENTS = js["MAXTORRENTS"]
+        FREE_SPACE = js["FREE_SPACE"]
 
 
 loadConfig()
@@ -37,12 +43,12 @@ while True:
                     if time == 0 or time > torrent[23]:
                         time = torrent[23]
                         id = i
-                if len(torrents['torrents']) > MAXTORRENTS:
+                if len(torrents['torrents']) > MAXTORRENTS or culc_free_space() < FREE_SPACE:
                     apiclient.removedata(torrents['torrents'][id][0])
                     log("INFO", f"Удаление {torrents['torrents'][id][2]} прошло успешно!")
-        except Exception:
-            log("ERROR", "Неизвестная ошибка! Возможно торрент не найден!")
+        except Exception as e:
+            log("ERROR", f"Неизвестная ошибка: {e}")
 
-    except Exception:
-        log("ERROR", "Ошибка соединения!")
+    except Exception as e:
+        log("ERROR", f"Ошибка соединения: {e}")
     sleep(60)

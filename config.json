@@ -1,1 +1,1 @@
-{ "PORT": 8081, "LOGIN": "admin", "PASSWORD": "admin", "MAXTORRENTS": 20 }
+{ "PORT": 8081, "LOGIN": "admin", "PASSWORD": "admin", "MAXTORRENTS": 15, "FREE_SPACE": 5 }
