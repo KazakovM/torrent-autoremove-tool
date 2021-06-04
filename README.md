@@ -22,6 +22,7 @@ _Группа в Telegram_: _https://t.me/btt_automation_
 
 _Donate:_
 * TRX/BTT: TEyaTpdKMCiKyQsokb89oBoLEiyzU1KHRE
+* RUB: [qiwi.com/n/PAIDE724](QIWI)
 
 _Протестированные VPS для торрентов_:
 * [cp.zomro.com](https://zomro.com/?from=296803)
