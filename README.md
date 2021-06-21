@@ -25,6 +25,5 @@ _Donate:_
 * RUB: [qiwi.com/n/PAIDE724](QIWI)
 
 _Протестированные VPS для торрентов_:
-* [cp.zomro.com](https://zomro.com/?from=296803)
 * [vultr.com](https://www.vultr.com/?ref=8883507)
-* [macloud.ru](https://macloud.ru/?partner=3s19krtxk1)
+* [macloud.ru](https://macloud.ru/?partner=21x4zp5121)
