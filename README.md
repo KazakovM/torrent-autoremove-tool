@@ -6,7 +6,7 @@ v. 1.1.0
 Скрипт для удаления старых торрентов по заданным условиям. 
 Работает с μTorrent и Bittorrent клиентами. 
 
-[Группа в Telegram](https://t.me/joinchat/Jsb2S7JnaFhlY2Qy)
+[Группа в Telegram (для вступления пишите в личку)](https://t.me/kazakovms)
 
 ## Настройка скрипта
 1. Скачать и устанавить [Python](https://www.python.org/downloads/) последней версии. При установке обязательно добавить запись в **PATH**.
