@@ -6,7 +6,6 @@ v. 1.1.0
 Скрипт для удаления старых торрентов по заданным условиям. 
 Работает с μTorrent и Bittorrent клиентами. 
 
-[Группа в Telegram (для вступления пишите в личку)](https://t.me/kazakovms)
 
 ## Настройка скрипта
 1. Скачать и устанавить [Python](https://www.python.org/downloads/) последней версии. При установке обязательно добавить запись в **PATH**.
@@ -17,13 +16,4 @@ v. 1.1.0
 6. Запустить файл _INSTALL.bat_ для установки необходимых модулей (только один раз).
 7. Запустить файл _START.bat_.
 
-Логирование процесса идет в файл **app\log.txt**. Логирование в консоль будет реализовано в следующей версии.
-
-
-_Donate:_
-* TRX/BTT: TEyaTpdKMCiKyQsokb89oBoLEiyzU1KHRE
-* RUB: [qiwi.com/n/PAIDE724](QIWI)
-
-_Протестированные VPS для торрентов_:
-* [vultr.com](https://www.vultr.com/?ref=8883507) - принимает не все карты. Нормально работает с [Tinkoff](https://www.tinkoff.ru/sl/2HFYdv2GfO6) - по [ссылке](https://www.tinkoff.ru/sl/2HFYdv2GfO6) карта с бесплатным обслуживанием.
-* [macloud.ru](https://macloud.ru/?partner=21x4zp5121)
+Логирование процесса идет в файл **app\log.txt**.
